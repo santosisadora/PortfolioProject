@@ -2,14 +2,18 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+  
+
 }
 
-/* Provide sufficient contrast against white background */
+
+/* Provide sufficient contrast against background */
+/*links*/
 a {
-    color: #0366d6;
+    color: #ffffff;
 }
 
 .btn-primary {
@@ -19,9 +23,9 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
@@ -36,7 +40,7 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -54,13 +58,17 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+  
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color: white;
+    background-color: #203B56;
 }
 .footer {
   position: absolute;
@@ -68,4 +76,20 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+.navbar-light {
+    background-color: #3FE0D0;
+}
+
+.nav-link{
+    color: #FFFFFF;
+}
+
+.form-group{
+    color:white;
+}
+
+.table{
+    color: white;
 }

@@ -22,6 +22,7 @@ namespace PortfolioProject.Controllers
         // GET: FreelanceProjects
         public async Task<IActionResult> Index()
         {
+            
             return View(await _context.FreelanceProjects.ToListAsync());
         }
 
