@@ -35,13 +35,14 @@ namespace PortfolioProject
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             //Adding Google authentication
-            services.AddAuthentication()
-                .AddGoogle(options =>
-                {
+            
+           // services.AddAuthentication()
+            //    .AddGoogle(options =>
+            //    {
                  
-                    options.ClientId = Configuration.GetSection("Authentication:Google")["ClientId"];
-                    options.ClientSecret = Configuration.GetSection("Authentication:Google")["ClientSecret"]; 
-                });
+          //          options.ClientId = Configuration.GetSection("Authentication:Google")["ClientId"];
+          //          options.ClientSecret = Configuration.GetSection("Authentication:Google")["ClientSecret"]; 
+          //      });
 
             services.AddAuthentication()
                 .AddGoogle(options =>
