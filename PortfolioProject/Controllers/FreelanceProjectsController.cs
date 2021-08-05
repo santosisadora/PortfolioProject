@@ -24,7 +24,7 @@ namespace PortfolioProject.Controllers
         public async Task<IActionResult> Index()
         {
             
-            return View(await _context.FreelanceProjects.ToListAsync());
+            return View("Index",await _context.FreelanceProjects.ToListAsync());
         }
 
         // GET: FreelanceProjects/Details/5
@@ -48,7 +48,7 @@ namespace PortfolioProject.Controllers
         // GET: FreelanceProjects/Create
         public IActionResult Create()
         {
-            return View();
+            return View("Create");
         }
 
         // POST: FreelanceProjects/Create
@@ -64,6 +64,8 @@ namespace PortfolioProject.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            _context.Add(freelanceProject);
+            await _context.SaveChangesAsync();
             return View(freelanceProject);
         }
 
