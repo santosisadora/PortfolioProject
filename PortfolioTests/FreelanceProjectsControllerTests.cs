@@ -123,5 +123,14 @@ namespace PortfolioTests
             //assert
             Assert.AreEqual("Index", viewResult.ViewName);
         }
+
+        [TestMethod]
+        public void GetCreateView() {
+            var result = (ViewResult)controller.Create();
+            Assert.AreEqual("Create", result.ViewName);
+
+        }
+
+
     }
 }
